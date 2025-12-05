@@ -17,3 +17,4 @@ class StoryJob(Base):
   completed_jobs = Column(DateTime(timezone=True), nullable=True)
 
   #46:50
+  #https://www.youtube.com/watch?v=_1P0Uqk50Ps
