@@ -23,3 +23,5 @@ class Settings(BaseSettings):
         case_sensitive = True
 
 settings = Settings() 
+
+#1:22:00
