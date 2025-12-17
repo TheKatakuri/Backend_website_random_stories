@@ -10,7 +10,7 @@ from models.job import StoryJob
 from schemas.story import (
     CompleteStoryResponse, CompleteStoryNodeResponse, CreateStoryRequest
 )
-from schemas.job import StoryJobRepsonse
+from schemas.job import StoryJobResponse
 
 router = APIRouter(
   prefix="/stories",
@@ -23,7 +23,7 @@ def get_session_id(session_id: Optional[str] = Cookie(None)):
   return session_id
 
 
-@router.post("/create", response_model=StoryJobRepsonse)
+@router.post("/create", response_model=StoryJobResponse)
 def create_story(
   request: CreateStoryRequest,
   background_tasks: BackgroundTasks,

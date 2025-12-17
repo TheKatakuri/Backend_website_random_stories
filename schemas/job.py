@@ -6,7 +6,7 @@ from pydantic import BaseModel
 class StoryJobBase(BaseModel):
   theme: str
 
-class StoryJobRepsonse(BaseModel):
+class StoryJobResponse(BaseModel):
   job_id: int
   status: str
   created_at: datetime
